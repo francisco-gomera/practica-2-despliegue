@@ -28,8 +28,8 @@ jobs:
             - name: Build and push Docker images
               uses: docker/build-push-action@v5
               with:
-                context: ./Practica-3/
-                file: ./Practica-3/Dockerfile.seeded
+                context: "./Practica 3"
+                file: "./Practica 3/Dockerfile.seeded"
                 push: true
                 tags: |
                     ghcr.io/${{ github.repository }}:${{ github.ref_name }}
